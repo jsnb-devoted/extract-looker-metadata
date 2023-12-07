@@ -207,7 +207,7 @@ def extract_data(
             filters[datetime_index] = f"{date_filter}"
 
         ## hit the Looker API
-        write_query = looker_sdk.models.WriteQuery(
+        write_query = looker_sdk.models40.WriteQuery(
             model=query_body["model"],
             view=query_body["explore"],
             fields=fields,
